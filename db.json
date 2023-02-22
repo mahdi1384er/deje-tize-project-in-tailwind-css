@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id" : 1,
+      "titel": "ساعت هوشمند سری اپل 1",
+      "imgs" : "../accest/img/10.webp",
+        "priec" : "۱۲۰.۰۰۰ تومان"
+    },
+
+    {
+      "id" : 2,
+      "titel": "ساعت سامسونگ  Galaxy",
+      "imgs" : "../accest/img/11.webp",
+        "priec" : "۳۴۰.۰۰۰ تومان"
+    },
+
+    {
+      "id" : 3,
+      "titel": "ساعت هوشمند مدل M46",
+      "imgs" : "../accest/img/13.webp" ,
+        "priec" : "۴۵۰.۰۰۰ تومان"
+    },
+    {
+      "id" : 4,
+      "titel": "ساعت مچی عقربه‌ای مردانه",
+      "imgs" : "../accest/img/14.webp",
+        "priec" : "۴۴۰.۰۰۰ تومان"
+    },
+
+    {
+      "id" : 5,
+      "titel": "ساعت مچی دیجیتال اسکمی",
+      "imgs" : "../accest/img/11.webp",
+        "priec" : "۶۵۰.۰۰۰۰ تومان"
+    }
+  ]
+}
