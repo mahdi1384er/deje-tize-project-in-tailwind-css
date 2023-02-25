@@ -23,7 +23,7 @@ function Products() {
     const CretDiv = document.createElement("div");
     CretDiv.classList.add("productsContener");
     CretDiv.innerHTML = `          <div
-        class="products flex flex-col w-full  h-[230px] m-2  bg-white shadow-2xl rounded-xl flex-grow-[4] p-2 md:h-[250px]">
+        class="products flex flex-col w-full  h-[230px]   bg-white shadow-2xl rounded-xl flex-grow-[4] p-2 md:h-[289px] sm:h-[253px]">
     
         <div>
             <div class="flex-grow-[1]">
@@ -70,17 +70,17 @@ function Products() {
     
                 <div class="mt-4">
                     <div>
-                        <p class="text-[14px] md:text-[17px]">${items.titel}</p>
+                        <p class=" max-md:text-[17px] max-xl:text-[13px] max-sm:text-[13px]">${items.titel}</p>
                     </div>
     
                   <div>
                   <div class="flex flex-col-reverse">
-                  <p class="text-orange-500 text-[15px] float-right">${items.priec}</p>
+                  <p class="text-orange-500 text-[15px] float-right md:mt-3 max-sm:text-[14px]  max-sm:p-1">${items.priec}</p>
               </div>
-              <hr class="border-[1px] border-gray-200">
+              <hr class="border-[1px] border-gray-200 md:mt-4">
 
-              <div class="text-center  mt-[300px]">
-                  <p class="text-orange-500 text-[12px] mt-[300px] text-center font-bold md:text-[14px]">مشاهده و سفارش</p>
+              <div class="text-center  hover:cursor-pointer max-sm:p-2">
+                  <p class="text-orange-500 text-[15px] md:mt-1 text-center font-bold md:text-[14px] sm:p-1">مشاهده و سفارش</p>
               </div>
                   </div>
                 </div>

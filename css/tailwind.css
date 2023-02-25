@@ -1,5 +1,20 @@
-@import url('../fontfase.css');
+@import url("../fontfase.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input[type="checkbox"]:focus {
+  outline: 0;
+}
+
+@layer utilities {
+  .linkSidbar:hover {
+    cursor: pointer;
+  }
+
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+}

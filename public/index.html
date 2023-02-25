@@ -16,8 +16,8 @@
 
     <div id="contener">
         <!-- header -->
-        <header class="flex justify-around mt-6 items-center mb-2">
-            <div>img logo</div>
+        <header class="flex justify-around mt-6 items-center mb-2 md:hidden">
+            <div>img</div>
             <div>
                 <p class="text-[20px]">ساعت هوشمند</p>
             </div>
@@ -28,6 +28,36 @@
                         d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                 </svg>
             </div>
+        </header>
+
+        <header class="w-full  xl:m-auto shadow-lg bg-white mb-6 sticky top-0 z-[1] max-lg:hidden">
+           <div class="container max-w-screen-2xl m-auto mb-3">
+            <div class="flex justify-between p-[20px] h-[80px] items-center">
+                <div class="flex  items-center">
+                    <div class="ml-9 text-2xl text-unset">
+                        <p class="hover:cursor-pointer"><span class="text-orange-500">دیجی</span> تایز</p>
+                    </div>
+                    <nav class="flex">
+                        <ul class="flex max-xl:hidden">
+                            <li class="mr-[30px]"><a href="#" class="text-[18px]">خانه</a></li>
+                            <li class="mr-[30px]"><a href="#" class="text-[18px]">تلفن همراه</a></li>
+                            <li class="mr-[30px]"><a href="#" class="text-[18px]">لپ تاپ</a></li>
+                            <li class="mr-[30px]"><a href="#" class="text-[18px]">ساعت هوشمند</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                        <div class="flex items-center relative r-[40px] w-[600px] rounded-sm  border-none bg-gray-100 pr-[17px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 mr-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                            <input type="text" placeholder="جستجوی نام محصول و نام برند و ..." class="focus:outline-none sha w-[600px] rounded-sm  border-none bg-gray-100 pr-[17px]">
+                        </div>
+                </div>
+            </div>
+           </div>
         </header>
 
         <!-- section titel -->
@@ -75,27 +105,28 @@
         </section>
 
         <!-- section prodcuts all -->
-        <div class="grid grid-cols-12 grid-row-[55px_minmax(500px,_1fr)] md:gap-8 ml-[15px]">
+        <div class="max-w-screen-2xl container xl:m-auto grid grid-cols-12 grid-row-[55px_minmax(500px,_1fr)] md:gap-8 ml-[15px]">
             <!-- sidbar -->
-            <div class="bg-white rounded-xl p-4 hidden md:block col-span-3 row-span-2 h-[600px] relative w-[92%] mt-0 mr-[20px]">
+            <div
+                class="bg-white rounded-xl  hidden md:block col-span-3 row-span-2 h-[637px] relative xl:w-[79%] max-lg:w-[100%] mt-0 mr-[20px] max-xl:hidden">
                 <aside>
                     <div>
-                        <div>
+                        <div class="pr-4">
                             <div>
-                                <p class="m-4 text-orange-500">دسته بندی </p>
+                                <p class="mt-6 text-orange-500">دسته بندی </p>
                             </div>
 
 
                             <div>
-                                <div class="flex mt-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                <div class="linkSidbar flex mt-6">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
                                     </svg>
                                     <p class=" mr-[10px]">تلفن همراه</p>
                                 </div>
-                                <div class="flex mt-5">
+                                <div class="linkSidbar flex mt-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -103,7 +134,7 @@
                                     </svg>
                                     <p class=" mr-[10px] text-gray-500">لپ تاپ</p>
                                 </div>
-                                <div class="flex mt-5">
+                                <div class="linkSidbar flex mt-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -113,39 +144,177 @@
                                 </div>
                             </div>
                             <br>
-                            <hr>
+                            <div class="pl-[15px]">
+                                <hr>
+                            </div>
                         </div>
 
-                        <div>
-                            <div>
-                                <p class="m-4 text-orange-500">فیلتر</p>
+                        <div x-data="{isMatch : false , isColor : false , priec: false}">
+
+                            <div class="pr-4">
+                                <div>
+                                    <p class="mt-6 text-orange-500">فیلتر</p>
+                                </div>
+
+                                <div @click="isMatch =!  isMatch" class="flex justify-between w-[79%]">
+                                    <div class="linkSidbar flex mt-6 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6 rotate-80">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
+                                        </svg>
+                                        <p class="mr-[10px] max-lg:text-[14px]">برند محصول</p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <svg :class="isMatch ? 'rotate-180' : '' " xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6 transition-all">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div x-show="isMatch !== true">
+
+                                    <div class="linkSidbar flex justify-between w-[79%]">
+                                        <div class="flex mt-6 items-center">
+                                            <input type="checkbox"
+                                                class="form-checkbox focus:outline-none rounded text-orange-600">
+                                            <p class="mr-[10px] max-lg:text-[14px]">هواوی</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="linkSidbar flex justify-between w-[79%]">
+                                        <div class="flex mt-6 items-center">
+                                            <input type="checkbox"
+                                                class="form-checkbox focus:outline-none rounded text-orange-600">
+                                            <p class="mr-[10px] max-lg:text-[14px]">سامسونگ</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="linkSidbar flex justify-between w-[79%]">
+                                        <div class="flex mt-6 items-center">
+                                            <input type="checkbox"
+                                                class="form-checkbox focus:outline-none rounded text-orange-600">
+                                            <p class="mr-[10px] max-lg:text-[14px]">اپل</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="linkSidbar flex justify-between w-[79%]">
+                                        <div class="flex mt-6 items-center">
+                                            <input type="checkbox"
+                                                class="form-checkbox focus:outline-none rounded text-orange-600">
+                                            <p class="mr-[10px] max-lg:text-[14px]">نوکیا</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
-                                  </svg>
-                                <p>برند محصول</p>   
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-                                  </svg>
-                                                                 
+                            <div class="bg-white pr-4 mt-[13px]">
+                                <div @click="isColor =!  isColor" class="flex justify-between w-[79%]">
+                                    <div class="linkSidbar flex mt-6 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008z" />
+                                        </svg>
+                                        <p class="mr-[10px] max-lg:text-[14px]">رنگ محصول</p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <svg :class="!isColor ? 'rotate-180' : '' " xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6 transition-all">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div x-show="isColor === true">
+
+                                    <div class="linkSidbar flex justify-between w-[79%]">
+                                        <div class="flex mt-6 items-center">
+                                            <input type="checkbox"
+                                                class="form-checkbox focus:outline-none rounded text-green-600">
+                                            <p class="mr-[10px] max-lg:text-[14px]">سبز</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="linkSidbar flex justify-between w-[79%]">
+                                        <div class="flex mt-6 items-center">
+                                            <input type="checkbox"
+                                                class="form-checkbox focus:outline-none rounded text-red-600">
+                                            <p class="mr-[10px] max-lg:text-[14px]">قرمز</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="linkSidbar flex justify-between w-[79%]">
+                                        <div class="flex mt-6 items-center">
+                                            <input type="checkbox"
+                                                class="form-checkbox focus:outline-none rounded text-blue-600">
+                                            <p class="mr-[10px] max-lg:text-[14px]">آبی</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="linkSidbar flex justify-between w-[79%]">
+                                        <div class="flex mt-6 items-center">
+                                            <input type="checkbox"
+                                                class="form-checkbox focus:outline-none rounded text-orange-600">
+                                            <p class="mr-[10px] max-lg:text-[14px]">نارنجی</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div x-show="isColor === true">
+
+                                </div>
                             </div>
+
+                            <div class="bg-white pr-4 mt-[13px]">
+                                <div @click="priec =!  priec" class="flex justify-between w-[79%]">
+                                    <div class="linkSidbar flex mt-6 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                                        </svg>
+                                        <p class="mr-[10px] max-lg:text-[14px]">محدوده محصول</p>
+                                    </div>
+                                    <div class="mt-6">
+                                        <svg :class="!priec ? 'rotate-180' : '' " xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6 transition-all">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div x-show="priec === true">
+                                    <div class="linkSidbar flex justify-between w-[79%]">
+                                        <div class="flex mt-6 items-center">
+                                            <input type="checkbox"
+                                                class="form-checkbox focus:outline-none rounded text-green-600">
+                                            <p class="mr-[10px] max-lg:text-[14px]">سبز</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </aside>
             </div>
 
-            <div x-data="{activ : 1 , activClass: 'text-gray-900 '}" class="bg-white p-4  hidden md:flex items-center col-span-9 rounded-xl">
+            <!-- titel website -->
+            <div x-data="{activ : 1 , activClass: 'text-gray-900 '}"
+                class="bg-white p-3  max-lg:hidden md:flex items-center col-span-9 rounded-xl md:mt-0 md:ml-4">
                 <div class="flex items-center">
-                    <div class="bg-orange-400 rounded-sm p-1 flex w-[40px] h-[40px]">
+                    <div class="bg-orange-400 rounded-sm p-1 flex w-[50px] h-[40px]">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-8 h-8 text-orange-200">
+                            stroke="currentColor" class="w-12 h-8 text-orange-200">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
                         </svg>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-8 h-8 text-orange-200">
+                            stroke="currentColor" class="w-12 h-8 text-orange-200">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3" />
                         </svg>
@@ -179,9 +348,9 @@
             </div>
 
             <!-- prodcuts ui -->
-            <div class="col-span-12 md:col-span-9">
+            <div class="col-span-12 md:col-span-9 md:mt-0 md:ml-4">
                 <section class="mb-12">
-                    <div class="productsContener grid gap-2 md:gap-1.5 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <div class="productsContener grid gap-2 md:gap-7 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                         <!-- <div
                                 class="products flex flex-col w-full  h-[230px] m-2  bg-white shadow-2xl rounded-xl flex-grow-[4] p-2 md:h-[250px]">
         
@@ -287,11 +456,13 @@
                 </div>
             </div>
         </section>
+
+        
     </div>
 
 
 
-    <script src="../js/app.js"></script>
+    <script src="../public/app.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 
