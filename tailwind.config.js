@@ -3,7 +3,10 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
-      
+      colors: {
+        "border-color": "var(--border-color)",
+        "color-Main": "var(--color-Main)"
+      },
     },
   },
   plugins: [

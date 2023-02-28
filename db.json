@@ -36,30 +36,51 @@
 
     {
       "id" : 6,
-      "titel": "ساعت مچی دیجیتال اسکمی",
-      "imgs" : "../accest/img/11.webp",
+      "titel": "ساعت هوشمند مدل T55",
+      "imgs" : "../accest/img/40.webp",
         "priec" : "۶۵۰.۰۰۰۰ تومان"
     },
 
     {
       "id" : 7,
-      "titel": "ساعت مچی دیجیتال اسکمی",
-      "imgs" : "../accest/img/11.webp",
+      "titel": "ساعت هوشمند زبلاز مدل",
+      "imgs" : "../accest/img/41.webp",
         "priec" : "۶۵۰.۰۰۰۰ تومان"
     },
 
     {
       "id" : 8,
-      "titel": "ساعت مچی دیجیتال اسکمی",
-      "imgs" : "../accest/img/11.webp",
+      "titel": "ساعت هوشمند مدل T55",
+      "imgs" : "../accest/img/44.webp",
         "priec" : "۶۵۰.۰۰۰۰ تومان"
     },
 
     {
       "id" : 9,
-      "titel": "ساعت مچی دیجیتال اسکمی",
-      "imgs" : "../accest/img/11.webp",
+      "titel": "ساعت هوشمند فسیل ",
+      "imgs" : "../accest/img/45.webp",
         "priec" : "۶۵۰.۰۰۰۰ تومان"
+    },
+
+    {
+      "id" : 10,
+      "titel": "ساعت هوشمند مدل DT68",
+      "imgs" : "../accest/img/46.webp",
+        "priec" : "۶۵۰.۰۰۰۰ تومان"
+    },
+
+    {
+      "id" : 11,
+      "titel": "ساعت هوشمند کلومن پلاس",
+      "imgs" : "../accest/img/47.webp",
+        "priec" : "۶۵۰.۰۰۰۰ تومان"
+    },
+    
+    {
+      "id" : 12,
+      "titel": "ساعت هوشمند آی واون ",
+      "imgs" : "../accest/img/48.webp",
+        "priec" : "۲,۹۹۹,۰۰۰"
     }
   ]
 }

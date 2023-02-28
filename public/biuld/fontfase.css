@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Shabnam;
+  src: url("../accest/font/vaizr.eot");
+  src: url("Shabnam.eot?#iefix") format("embedded-opentype"),
+    url("../accest/font/vazir-bold.woff") format("woff2"), url("Shabnam.woff") format("woff"),
+    url("../accest/font/vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: Shabnam;
+  src: url("../accest/font/vaizr.eot");
+  src: url("Shabnam.eot?#iefix") format("embedded-opentype"),
+    url("../accest/font/vazir-bold.woff") format("woff2"), url("Shabnam.woff") format("woff"),
+    url("../accest/font/vazir.ttf") format("truetype");
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: Shabnam;
+  src: url("../accest/font/vaizr.eot");
+  src: url("Shabnam.eot?#iefix") format("embedded-opentype"),
+    url("../accest/font/vazir-bold.woff") format("woff2"), url("Shabnam.woff") format("woff"),
+    url("../accest/font/vazir.ttf") format("truetype");
+  font-weight: 100;
+}
+
+
+@font-face {
+  font-family: Shabnam;
+  src: url("../accest/font/vaizr.eot");
+  src: url("Shabnam.eot?#iefix") format("embedded-opentype"),
+    url("../accest/font/vazir-bold.woff") format("woff2"), url("Shabnam.woff") format("woff"),
+    url("../accest/font/vazir.ttf") format("truetype");
+  font-weight: 300;
+}
+
+
+
+@font-face {
+  font-family: Shabnam;
+  src: url("../accest/font/vaizr.eot");
+  src: url("Shabnam.eot?#iefix") format("embedded-opentype"),
+    url("../accest/font/vazir-bold.woff") format("woff2"), url("Shabnam.woff") format("woff"),
+    url("../accest/font/vazir.ttf") format("truetype");
+  font-weight: 500;
+}
