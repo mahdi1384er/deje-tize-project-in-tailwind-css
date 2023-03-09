@@ -9,7 +9,10 @@
   .linkSidbar:hover {
     cursor: pointer;
   }
-  
+
+  .textSize {
+    font-size: 18px;
+  }
 
 }
 
